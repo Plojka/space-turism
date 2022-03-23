@@ -15,12 +15,13 @@
 }
 
 html {
-  font-size: 16px;
   height: 100%;
 }
 
 body {
   height: 100%;
+  width: auto;
+  font-size: 16px;
 }
 
 .showcase {
@@ -44,6 +45,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 0 0 0 38px;
+    height: fit-content;
   }
 }
 .showcase .header {
@@ -145,7 +147,6 @@ body {
 @media screen and (max-width: 768px) {
   .main .text p {
     text-align: center;
-    padding-bottom: 156px;
   }
 }
 .main .circle {
@@ -163,6 +164,7 @@ body {
   .main .circle {
     height: 242px;
     width: 242px;
+    margin: 5em 0;
   }
 }
 .main .circle p {

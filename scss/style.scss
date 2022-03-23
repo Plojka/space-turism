@@ -26,12 +26,13 @@ $content-left-padding: 40px;
 }
 
 html {
-  font-size: 16px;
   height: 100%;
 }
 
 body {
   height: 100%;
+  width: auto;
+  font-size: 16px;
 }
 
 .showcase {
@@ -54,6 +55,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 0 0 0 38px;
+    height: fit-content;
   }
 
   .header {
@@ -106,7 +108,6 @@ body {
         }
       }
     }
-
   }
 }
 
@@ -162,7 +163,6 @@ body {
 
       @media screen and (max-width: 768px) {
         text-align: center;
-        padding-bottom: 156px;
       }
     }
   }
@@ -181,6 +181,7 @@ body {
     @media screen and(max-width: 768px) {
       height: 242px;
       width: 242px;
+      margin: 5em 0;
     }
 
     p {
@@ -194,8 +195,6 @@ body {
     }
   }
 }
-
-
 
 // .menuTablet {
 //   @media screen and(max-width: 768px) {
