@@ -48,6 +48,12 @@ body {
     height: fit-content;
   }
 }
+@media screen and (max-width: 530px) {
+  .showcase {
+    padding: 0;
+    text-align: center;
+  }
+}
 .showcase .header {
   width: 100%;
   display: grid;
@@ -56,6 +62,11 @@ body {
 }
 .showcase .header .logo {
   padding-right: 50px;
+}
+@media screen and (max-width: 530px) {
+  .showcase .header .logo {
+    padding: 24px 0 0 24px;
+  }
 }
 .showcase .header .logo img {
   height: 3.12em;
@@ -92,6 +103,11 @@ body {
   font-size: 1em;
   font-weight: 400;
   padding-bottom: 2.37em;
+}
+@media screen and (max-width: 530px) {
+  .showcase .header .menu {
+    display: none;
+  }
 }
 
 .menu a:hover {
@@ -131,12 +147,24 @@ body {
     letter-spacing: 3px;
   }
 }
+@media screen and (max-width: 530px) {
+  .main .text h3 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+}
 .main .text h1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
   font-weight: 400;
   line-height: 172px;
   letter-spacing: 4.7px;
+}
+@media screen and (max-width: 530px) {
+  .main .text h1 {
+    font-size: 80px;
+  }
 }
 .main .text p {
   font-size: 18px;
@@ -147,6 +175,11 @@ body {
 @media screen and (max-width: 768px) {
   .main .text p {
     text-align: center;
+  }
+}
+@media screen and (max-width: 530px) {
+  .main .text p {
+    font-size: 15px;
   }
 }
 .main .circle {
@@ -167,6 +200,12 @@ body {
     margin: 5em 0;
   }
 }
+@media screen and (max-width: 530px) {
+  .main .circle {
+    height: 150px;
+    width: 150px;
+  }
+}
 .main .circle p {
   text-transform: uppercase;
   font-family: "Bellefair", serif;
@@ -175,6 +214,13 @@ body {
   line-height: 37px;
   letter-spacing: 2px;
   color: #0b0d17;
+}
+@media screen and (max-width: 530px) {
+  .main .circle p {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
