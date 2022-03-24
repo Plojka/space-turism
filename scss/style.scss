@@ -72,10 +72,9 @@ body {
     .logo {
       padding-right: 50px;
 
-      @media screen and(max-width: 530px){
-        padding: 24px 0 0 24px;  
+      @media screen and(max-width: 530px) {
+        padding: 24px 0 0 24px;
       }
-      
 
       img {
         height: 3.12em;
@@ -114,6 +113,11 @@ body {
             font-size: 1em;
             font-weight: 400;
             padding-bottom: 2.37em;
+
+            @media screen and(max-width: 768px) {
+              font-size: 14px;
+              letter-spacing: 2.3px;
+            }
           }
         }
       }
@@ -127,6 +131,36 @@ body {
 .menu a:hover {
   border-bottom: 3px solid #fff;
   transition: 0.2s;
+}
+
+.aside {
+  position:absolute;
+  top:0;
+  left: 121px;
+  width: 254px;
+  height: 100%;
+  background-color: rgba(23, 64, 77, 0.9);
+  box-shadow: inset 0px 4px 4px #09283d;
+
+.bars {
+  display: none;
+  @media screen and(max-width: 530px) {
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    right: 24px;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.xmark {
+  display: none;
+  @media screen and(max-width: 530px) {
+    display: inline-block;
+  }
+}
 }
 
 .main {

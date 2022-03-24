@@ -104,6 +104,12 @@ body {
   font-weight: 400;
   padding-bottom: 2.37em;
 }
+@media screen and (max-width: 768px) {
+  .showcase .header .menu ul li a {
+    font-size: 14px;
+    letter-spacing: 2.3px;
+  }
+}
 @media screen and (max-width: 530px) {
   .showcase .header .menu {
     display: none;
@@ -113,6 +119,39 @@ body {
 .menu a:hover {
   border-bottom: 3px solid #fff;
   transition: 0.2s;
+}
+
+.aside {
+  position: absolute;
+  top: 0;
+  left: 121px;
+  width: 254px;
+  height: 100%;
+  background-color: rgba(23, 64, 77, 0.9);
+  box-shadow: inset 0px 4px 4px #09283d;
+}
+.aside .bars {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  .aside .bars {
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    right: 24px;
+    z-index: 10;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+.aside .xmark {
+  display: none;
+}
+@media screen and (max-width: 530px) {
+  .aside .xmark {
+    display: inline-block;
+  }
 }
 
 .main {
